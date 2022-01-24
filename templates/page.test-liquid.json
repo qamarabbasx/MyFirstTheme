@@ -125,7 +125,7 @@
     "164303846711fb120f": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{'hello Qamar'| capitalize}}",
+        "custom_liquid": "{{'hello Qamar!'| capitalize}}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
