@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "164303786387235797": {
+      "type": "rich-text",
+      "blocks": {
+        "16430378633893eba9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Object",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16430378633893eba9-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "164303786740b4269f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{page.title }}\nobject working",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "164303825017bfa273": {
+      "type": "rich-text",
+      "blocks": {
+        "164303825042bac341-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tags",
+            "heading_size": "h1"
+          }
+        },
+        "164303825042bac341-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "164303825042bac341-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "164303825042bac341-0",
+        "164303825042bac341-1",
+        "164303825042bac341-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1643038255d12c0fac": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if page.title=='Test Liquid' %}\nYou are at right page\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "164303846495dc7f2a": {
+      "type": "rich-text",
+      "blocks": {
+        "164303846430a2a411-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Filters",
+            "heading_size": "h1"
+          }
+        },
+        "164303846430a2a411-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "164303846430a2a411-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "164303846430a2a411-0",
+        "164303846430a2a411-1",
+        "164303846430a2a411-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "164303846711fb120f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{'hello Qamar'| capitalize}}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164303786387235797",
+    "164303786740b4269f",
+    "164303825017bfa273",
+    "1643038255d12c0fac",
+    "164303846495dc7f2a",
+    "164303846711fb120f"
+  ]
+}
