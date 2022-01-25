@@ -1,4 +1,15 @@
-<h1>section works coded in VS but updated in shopify! </h1>
+<h1>{{section.settings.liquid-ref}} </h1>
+
+{% if section.settings.liquid-checkbox==true %}
+<h2>Checkbox is checked </h2>
+{% else %}
+<h2>Checkbox is Not checked</h2>
+{% endif %}
+{% if section.settings.liquid-number==0 %}
+<b>its working</b>
+{% else %}
+<b>{{section.settings.liquid-number}}</b>
+{% endif %}
 {% schema %}
     {
         "name": "Liquid Refernce",
@@ -8,6 +19,16 @@
                 "type":"text",
                 "label":"A reference forshopify liquid"
 
+            },
+            {
+                "id":"liquid-checkbox",
+                "type":"checkbox",
+                "label":"A checkbox in liquid"
+            },
+            {
+                "id":"liquid-number",
+                "type":"number",
+                "label":"Add a number in liquid"
             }
         ],
         "presets":[
