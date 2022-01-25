@@ -1,15 +1,26 @@
-<h1>{{section.settings.liquid-ref}} </h1>
+<h1>Text</h1>
+<h2>{{section.settings.liquid-ref}} </h2>
 
+<h1>CheckBox</h1>
 {% if section.settings.liquid-checkbox==true %}
 <h2>Checkbox is checked </h2>
 {% else %}
 <h2>Checkbox is Not checked</h2>
 {% endif %}
-{% if section.settings.liquid-number==0 %}
-<b>its working</b>
-{% else %}
+
+<h1>Number</h1>
+{% if section.settings.liquid-number > 0 %}
 <b>{{section.settings.liquid-number}}</b>
 {% endif %}
+
+<h1>RadioButton</h1>
+
+<h1>Range</h1>
+
+<h1>Select</h1>
+
+<h1>TextArea</h1>
+
 {% schema %}
     {
         "name": "Liquid Refernce",
@@ -26,10 +37,30 @@
                 "label":"A checkbox in liquid"
             },
             {
-                "id":"liquid-number",
-                "type":"number",
-                "label":"Add a number in liquid"
+                "id":"liquid-radio",
+                "type":"radio",
+                "label":"Add a Radio Button in liquid",
+                "options": 
+                [
+                 {
+                    "value":"option-1",
+                    "label":"Option 1"
+                 },
+                 {
+                    "value":"option-2",
+                    "label":"Option 2"
+                 }
+                ]
+            },
+            {
+                "id":"liquid-range",
+                "type":"range",
+                "label":"Range of specified numbers",
+                "min":3,
+                "max":15,
+                "default":3
             }
+            
         ],
         "presets":[
             {
