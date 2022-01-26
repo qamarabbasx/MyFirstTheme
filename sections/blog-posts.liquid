@@ -10,7 +10,9 @@ There is atleast one blog posts published..
 <br>
 {{blog.articles_count}}
 <br>
+
 {% for article in blog.articles limit: section.settings.blog-range %}
+<div class="grid__item medium-up--one-third">
 <a href="{{article.url}}">
 {{article.title}} 
 </a>
@@ -18,8 +20,8 @@ There is atleast one blog posts published..
 <a href="{{article.url}}">
 <img src="{{article.image | img_url:'500x'}}">
 </a>
-<br>
-  
+
+</div>
 {% endfor %}
     
 {% endunless %}
