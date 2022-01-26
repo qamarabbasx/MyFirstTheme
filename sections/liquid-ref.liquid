@@ -3,23 +3,31 @@
 
 <h1>CheckBox</h1>
 {% if section.settings.liquid-checkbox==true %}
-<h2>Checkbox is checked </h2>
+Checkbox is checked 
 {% else %}
-<h2>Checkbox is Not checked</h2>
+Checkbox is Not checked
 {% endif %}
 
 <h1>Number</h1>
 {% if section.settings.liquid-number > 0 %}
-<b>{{section.settings.liquid-number}}</b>
+{{section.settings.liquid-number}}
 {% endif %}
 
 <h1>RadioButton</h1>
+{% if section.settings.liquid-radio == 'option-1' %}
+Option 1 is selected
+{% else %}
+    Option 2 is selected
+{% endif %}
 
 <h1>Range</h1>
+{{section.settings.liquid-range}}
 
 <h1>Select</h1>
+{{section.settings.liquid-select}}
 
 <h1>TextArea</h1>
+{{section.settings.liquid-textarea}}
 
 {% schema %}
     {
@@ -28,18 +36,23 @@
             {
                 "id":"liquid-ref",
                 "type":"text",
-                "label":"A reference forshopify liquid"
+                "label":"Text"
 
             },
             {
                 "id":"liquid-checkbox",
                 "type":"checkbox",
-                "label":"A checkbox in liquid"
+                "label":"Checkbox"
+            },
+            {
+                "id":"liquid-number",
+                "type":"number",
+                "label":"Number"
             },
             {
                 "id":"liquid-radio",
                 "type":"radio",
-                "label":"Add a Radio Button in liquid",
+                "label":"Radio",
                 "options": 
                 [
                  {
@@ -55,10 +68,37 @@
             {
                 "id":"liquid-range",
                 "type":"range",
-                "label":"Range of specified numbers",
+                "label":"Range",
                 "min":3,
                 "max":15,
+                "step":3,
                 "default":3
+            },
+            {
+                "id":"liquid-select",
+                "type":"select",
+                "label":"Select",
+                "options": 
+                [
+                 {
+                    "value":"select-1",
+                    "label":"Select 1"
+                 },
+                 {
+                    "value":"select-2",
+                    "label":"Select 2"
+                 },
+                 {
+                    "value":"select-3",
+                    "label":"Select 3"
+                 }
+                ],
+               "default": "select-2"
+            },
+            {
+                "id":"liquid-textarea",
+                "type":"textarea",
+                "label":"textarea"
             }
             
         ],
