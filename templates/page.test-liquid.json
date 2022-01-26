@@ -134,7 +134,12 @@
     "1643118816011c38bf": {
       "type": "liquid-ref",
       "settings": {
-        "liquid-ref": ""
+        "liquid-ref": "Basic Input Settings",
+        "liquid-checkbox": false,
+        "liquid-radio": "option-1",
+        "liquid-range": 3,
+        "liquid-select": "select-2",
+        "liquid-textarea": "hi! I am a text area"
       }
     }
   },
