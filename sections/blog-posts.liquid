@@ -1,8 +1,26 @@
 {{section.settings.liquid-range}}
-{{blog.articles_count}}
+{% assign blog = section.settings.new-blog %}
+<!-- in above line we are assigning a veriable than we are able to perfom below function -->
+<!-- {{blog.articles_count}} -->
+<!-- but we can simply do this by our old way of doing like -->
+<!-- {{section.settings.new-blog.articles_count}} -->
+<!-- for line break <br> -->
 {% unless blog.articles_count == 0 %}
-There is atleast one blog posts published.
+There is atleast one blog posts published..
+<br>
 {{blog.articles_count}}
+<br>
+{% for article in blog.articles limit: section.settings.blog-range %}
+<a href="{{article.url}}">
+{{article.title}} 
+</a>
+<br>
+<a href="{{article.url}}">
+<img src="{{article.image | img_url:'500x'}}">
+</a>
+<br>
+  
+{% endfor %}
     
 {% endunless %}
 
@@ -18,6 +36,11 @@ There is atleast one blog posts published.
         "max":15,
         "step":3,
         "default":3
+      },
+      {
+          "id":"new-blog",
+          "type":"blog",
+          "label":"blog"
       }
   ],
   "presets":[

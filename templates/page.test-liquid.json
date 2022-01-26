@@ -117,7 +117,8 @@
     "1643204890233d67d7": {
       "type": "blog-posts",
       "settings": {
-        "blog-range": 12
+        "blog-range": 12,
+        "new-blog": "news"
       }
     }
   },
