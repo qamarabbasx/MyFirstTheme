@@ -1,0 +1,29 @@
+{{section.settings.liquid-range}}
+{{blog.articles_count}}
+{% unless blog.articles_count == 0 %}
+There is atleast one blog posts published.
+{{blog.articles_count}}
+    
+{% endunless %}
+
+{% schema %}
+{
+   "name": " New Blog Posts",
+  "settings": [
+      {
+        "id":"blog-range",
+        "type":"range",
+        "label":"Range",
+        "min":3,
+        "max":15,
+        "step":3,
+        "default":3
+      }
+  ],
+  "presets":[
+  {
+     "name": " New Blog Posts",
+     "category":"Posts"
+  }]
+}
+{% endschema %}

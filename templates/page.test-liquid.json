@@ -7,6 +7,7 @@
     },
     "164303786387235797": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "16430378633893eba9-0": {
           "type": "heading",
@@ -28,6 +29,7 @@
     },
     "164303786740b4269f": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{{page.title }}\nobject working",
         "color_scheme": "background-1",
@@ -37,6 +39,7 @@
     },
     "164303825017bfa273": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "164303825042bac341-0": {
           "type": "heading",
@@ -44,28 +47,10 @@
             "heading": "Tags",
             "heading_size": "h1"
           }
-        },
-        "164303825042bac341-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "164303825042bac341-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
-        "164303825042bac341-0",
-        "164303825042bac341-1",
-        "164303825042bac341-2"
+        "164303825042bac341-0"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -76,6 +61,7 @@
     },
     "1643038255d12c0fac": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% if page.title=='Test Liquid' %}\nYou are at right page\n{% endif %}",
         "color_scheme": "background-1",
@@ -85,6 +71,7 @@
     },
     "164303846495dc7f2a": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "164303846430a2a411-0": {
           "type": "heading",
@@ -92,28 +79,10 @@
             "heading": "Filters",
             "heading_size": "h1"
           }
-        },
-        "164303846430a2a411-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "164303846430a2a411-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
-        "164303846430a2a411-0",
-        "164303846430a2a411-1",
-        "164303846430a2a411-2"
+        "164303846430a2a411-0"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -124,6 +93,7 @@
     },
     "164303846711fb120f": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{{'hello Qamar!'| capitalize}}",
         "color_scheme": "background-1",
@@ -133,13 +103,21 @@
     },
     "1643118816011c38bf": {
       "type": "liquid-ref",
+      "disabled": true,
       "settings": {
         "liquid-ref": "Basic Input Settings",
         "liquid-checkbox": false,
+        "liquid-number": 4,
         "liquid-radio": "option-1",
         "liquid-range": 3,
         "liquid-select": "select-2",
         "liquid-textarea": "hi! I am a text area"
+      }
+    },
+    "1643204890233d67d7": {
+      "type": "blog-posts",
+      "settings": {
+        "blog-range": 12
       }
     }
   },
@@ -151,6 +129,7 @@
     "1643038255d12c0fac",
     "164303846495dc7f2a",
     "164303846711fb120f",
-    "1643118816011c38bf"
+    "1643118816011c38bf",
+    "1643204890233d67d7"
   ]
 }
