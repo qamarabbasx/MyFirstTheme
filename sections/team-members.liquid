@@ -1,8 +1,17 @@
-<div class="page-width">
-{% if section.schema.settings.title!= empty %}
+<div  style="width: 100%;">
+{% if section.settings.title!= blank %}
     {{section.settings.title}}
 {% endif %}
-
+    <div class="grid">
+    {% for member in section.blocks %}
+        <div class="grid__item medium-up--one-half" style="width: 50%;">
+            {{member.settings.image | img_url:"300x" | img_tag}}
+            <h1>{{member.settings.name}}</h1>
+            <span>{{member.settings.title}}</span>
+            <p>{{member.settings.bio}}</p>
+        </div>
+    {% endfor %}
+    </div>
 </div>
 
 {% schema %}
@@ -16,6 +25,43 @@
     "label":"Section Title",
     "default": "Meat our team"
     }
- ]
+ ],
+ "blocks": [
+    {
+       "name": "Member name",
+       "type":"staff-profile",
+       "settings":
+       [
+            {
+                "id":"image",
+            "type": "image_picker",
+            "label":"Image of the member"
+            },
+            {
+                "id":"name",
+                "type":"text",
+                "label":"Member Name"
+            },
+            {
+                "id":"title",
+                "type":"text",
+                "label":"Job Title"
+            },
+            {
+                "id":"bio",
+                "type":"textarea",
+                "label":"Member Biodata"
+
+            }
+       ]
+    }
+ ],
+ "presets":
+        [
+            {
+                "name":"Team Members",
+                "category":"Members Information"
+            }
+        ]
 }
 {% endschema %}
