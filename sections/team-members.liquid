@@ -1,10 +1,10 @@
-<div  style="width: 100%;">
+<div  class="page-width">
 {% if section.settings.title!= blank %}
     {{section.settings.title}}
 {% endif %}
-    <div class="grid">
+    <div class="collage">
     {% for member in section.blocks %}
-        <div class="grid__item medium-up--one-half" style="width: 50%;">
+        <div class="collage__item--right:nth-child(3n)" >
             {{member.settings.image | img_url:"300x" | img_tag}}
             <h1>{{member.settings.name}}</h1>
             <span>{{member.settings.title}}</span>
