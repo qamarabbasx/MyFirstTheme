@@ -1,14 +1,15 @@
-<div  class="page-width">
+<div>
 {% if section.settings.title!= blank %}
     {{section.settings.title}}
 {% endif %}
-    <div class="collage">
+    <div class="grid">
     {% for member in section.blocks %}
-        <div class="collage__item--right:nth-child(3n)" >
+        <div class="grid__item grid--2-col-desktop" >
             {{member.settings.image | img_url:"300x" | img_tag}}
             <h1>{{member.settings.name}}</h1>
             <span>{{member.settings.title}}</span>
             <p>{{member.settings.bio}}</p>
+            
         </div>
     {% endfor %}
     </div>
